@@ -1,12 +1,5 @@
 from tkinter import *
-# Root -> a fő widget (a fő ablak)
-
-
-# Létrehozzuk a labelt
-
-
-# This will import all the widgets and modules which are available in
-# tkinter and ttk module
+from PIL import Image, ImageTk
 import Áron_Profilja
 import Bence_Profilja
 
@@ -34,12 +27,12 @@ label = Label(master, text ="Válaszd ki, hogy melyik profilba szeretnél belép
 
 # a button widget which will open a 
 # new window on button click
-btn = Button(master, text ="Áronéba", bg="#00FF9C", font="sans 30 bold", command = openNewWindow).grid(row= 2, column=0, pady=40,padx=(25, 25))
-btn2 = Button(master, text ="Bencéébe", bg="#00FF9C", font="sans 30 bold", command = openNewWindow2).grid(row= 2, column=2, pady=40,padx=(25, 25))
+btn = Button(master, text ="Áronéba", bg="#00FF9C", font="sans 20 bold",  borderwidth=20,command = openNewWindow).grid(row= 2, column=0, pady=40,padx=(25, 25))
+btn2 = Button(master, text ="Bencéébe", bg="#00FF9C", font="sans 20 bold",  borderwidth=20, command = openNewWindow2).grid(row= 2, column=2, pady=40,padx=(25, 25))
 
 
 #quit button
-bezaro_gomb = Button(master, text="Bezárás", bg="#733C3C", font="sans 23 bold", command=master.destroy).grid(row=6, column=1,pady=75,padx=20)
+bezaro_gomb = Button(master, text="Bezárás", bg="red", font="sans 23 bold", command=master.destroy).grid(row=6, column=1,pady=75,padx=20)
 
 
 # mainloop, runs infinitely
