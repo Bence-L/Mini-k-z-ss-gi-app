@@ -6,7 +6,7 @@ def alkalmazás():
     siker_ablak.configure(bg="black")
     siker_ablak.title("Siker")
     siker_cím = Label(siker_ablak, text="Bence profilja🕸", bg="black", fg="#00FF9C", font=('Times', 50, 'bold'))
-    siker_cím.grid(row=0, columnspan=1, pady=10, padx=150)
+    siker_cím.grid(row=0, columnspan=1, pady=10, padx=120)
 
     # abelepes_sikeres = Label(siker_ablak, text="A belépés sikeres volt", bg="black", fg="red", font=('Helvetica', 10, 'bold'))
     # abelepes_sikeres.grid(row=2, columnspan=1,pady=20, padx=(220,360))
