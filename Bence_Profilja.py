@@ -1,10 +1,13 @@
 from tkinter import *
+import Bence_Bejelentkezve
 
 def bencefuggveny():
     master = Tk()
     master.geometry("700x500")
     master.title("Bence profilja")
     master.configure(bg="black")
+    def ujabblaknyitas():
+                Bence_Bejelentkezve.alkalmazás()
 
     cim_bence = Label(master, text="Bejelentkezés", bg="#00FF9C", font=('Comic Sans', 50, 'bold'))
     cim_bence.grid(row=0, columnspan=3, pady=(35, 0), padx=120)
@@ -23,16 +26,7 @@ def bencefuggveny():
         if bekert_ertek == "Reggel":
             # Fő ablak bezárása sikeres bejelentkezés esetén
             master.destroy()
-
-            # Új ablak nyitása ha sikeres a bejelentkezés
-            siker_ablak = Tk()
-            siker_ablak.geometry("700x500")
-            siker_ablak.configure(bg="black")
-            siker_ablak.title("Siker")
-            siker_cím = Label(siker_ablak, text="SIKERÜLT", bg="black", fg="#00FF9C", font=('Comic Sans', 70, 'bold'))
-            siker_cím.grid(row=0, columnspan=1, pady=10, padx=100)
-            vissza_fooldalra = Button(siker_ablak, text="Vissza a főoldalra", bg="red", font="sans 23 bold", command=siker_ablak.destroy)
-            vissza_fooldalra.grid(row=1, column=1,pady=75,padx=20)
+            ujabblaknyitas()
         else:
             rossz = Label(master, text="Rossz jelszó, próbáld újra", bg="black",fg="red", font=('Comic Sans', 16, 'bold'))
             rossz.grid(row=6, column=1, pady=10, padx=20)
