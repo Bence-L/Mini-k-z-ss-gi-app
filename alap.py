@@ -34,11 +34,5 @@ btn2 = Button(master, text ="Bencéébe", bg="#00FF9C", font="sans 20 bold",  bo
 #quit button
 bezaro_gomb = Button(master, text="Bezárás", bg="red", font="sans 23 bold", command=master.destroy).grid(row=6, column=1,pady=75,padx=20)
 
-
-# mainloop, runs infinitely
 mainloop()
 
-# Betesszük a labelt az ablakba, és pont akkor lesz így az ablak, amekkora a szöveg
-
-
-# Event loop létrehozása
