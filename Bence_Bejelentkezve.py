@@ -21,10 +21,13 @@ def alkalmazás():
     
     
     def megnyomva():
+        üzenetek = ide_irjon.get()
+        elküldve = Label(siker_ablak, text="Elküldve", bg="black", fg="red", font=('Times', 10, 'bold'))
+        elküldve.grid(row=5, pady=10, padx=(0,550))
         try:
-            with open("üzenetek.txt", 'w') as fajl: #encodinggal fur betűk lettek!!!!!!!!!!!
+            with open("üzenetek.txt", 'a') as fajl: #encodinggal fur betűk lettek!!!!!!!!!!!
                     üzenetek = ide_irjon.get()
-                    print(üzenetek, sep='\n', file=fajl)
+                    print(üzenetek+" 2", sep='\n', file=fajl)
         except:
             print('Nem találjuk az adatokat')
         # kiiras = Label(siker_ablak, text=üzenetek, fg="red", bg="black", font=('Times', 10, 'bold'))
