@@ -42,4 +42,4 @@ def bencefuggveny():
     bezaro_gomb = Button(master, text="Bezárás", bg="red", font="sans 13 bold", command=master.destroy)
     bezaro_gomb.grid(row=8, column=1, pady=10, padx=20)
 
-    master.mainloop()
+    
