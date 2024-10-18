@@ -57,4 +57,3 @@ def alkalmazás():
 
 
     siker_ablak.mainloop()
-alkalmazás()

@@ -1,5 +1,4 @@
 from tkinter import *
-from PIL import Image, ImageTk
 import Áron_Profilja
 import Bence_Profilja
 
