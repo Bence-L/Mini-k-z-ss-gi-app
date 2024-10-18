@@ -52,7 +52,7 @@ def alkalmazás():
     
     #kilépés
     vissza_fooldalra = Button(siker_ablak, text="Vissza a főoldalra", bg="red", font="sans 10 bold", command=siker_ablak.destroy)
-    vissza_fooldalra.grid(row=8, columnspan=1,pady=15,padx=20)
+    vissza_fooldalra.grid(row=8, pady=15, padx=(0,550))
     
 
 
