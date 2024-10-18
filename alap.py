@@ -30,8 +30,8 @@ label = Label(master, text ="Válasszon egy profilt!",bg="#00FF9C" ,font="sans 1
 
 # a button widget which will open a 
 # new window on button click
-aron_valaszt = Button(master, text ="Áron", bg="#00FF9C", font="Times 22",  borderwidth=20,command = openNewWindow).grid(row= 4, column=0, pady=10,padx=(25, 25))
-bence_valaszt = Button(master, text ="Bence", bg="#00FF9C", font="Times 22",  borderwidth=20, command = openNewWindow2).grid(row= 4, column=2, pady=10,padx=(25, 25))
+aron_valaszt = Button(master, text ="Áron", bg="#00FF9C", font="Times 30 bold",  borderwidth=20,command = openNewWindow).grid(row= 4, column=0, pady=10,padx=(25, 25))
+bence_valaszt = Button(master, text ="Bence", bg="#00FF9C", font="Times 30 bold",  borderwidth=20, command = openNewWindow2).grid(row= 4, column=2, pady=10,padx=(25, 25))
 bence_emoji = Label(master, text="🏆", bg="black",fg="red",font=('Times', 35))
 bence_emoji.grid(row= 3, column=2, pady=5,padx=(25, 25))
 aron_emoji = Label(master, text="⚽", bg="black",fg="red",font=('Times', 35))
