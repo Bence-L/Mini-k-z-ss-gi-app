@@ -21,17 +21,17 @@ def openNewWindow2():
     Bence_Profilja.bencefuggveny()
 ábra= Label(master, text="📞", fg="red", bg="black",font=('Times', 80, 'bold'))
 ábra.grid(row= 0, columnspan=3,pady=(10,0), padx=320)
-cím = Label(master, text="Messenger+", fg="red",bg="black",font=('Times', 50,'bold'))
+cím = Label(master, text="Messenger+", fg="red",bg="black",font=('Times', 60,'bold'))
 cím.grid(row= 1, columnspan=3,pady=(1,0), padx=320)
-label = Label(master, text ="Válaszd ki, hogy melyik profilba szeretnél belépni!",bg="#00FF9C" ,font="sans 16 bold").grid(row= 2, columnspan=3, pady=(35,40), padx=5)
+label = Label(master, text ="Válasszon egy profilt!",bg="#00FF9C" ,font="sans 16 bold").grid(row= 2, columnspan=3, pady=(10,40), padx=5)
 
 #GOMBSTÍLUS
 
 
 # a button widget which will open a 
 # new window on button click
-aron_valaszt = Button(master, text ="Áronéba", bg="#00FF9C", font="Times 22",  borderwidth=20,command = openNewWindow).grid(row= 4, column=0, pady=10,padx=(25, 25))
-bence_valaszt = Button(master, text ="Bencéébe", bg="#00FF9C", font="Times 22",  borderwidth=20, command = openNewWindow2).grid(row= 4, column=2, pady=10,padx=(25, 25))
+aron_valaszt = Button(master, text ="Áron", bg="#00FF9C", font="Times 22",  borderwidth=20,command = openNewWindow).grid(row= 4, column=0, pady=10,padx=(25, 25))
+bence_valaszt = Button(master, text ="Bence", bg="#00FF9C", font="Times 22",  borderwidth=20, command = openNewWindow2).grid(row= 4, column=2, pady=10,padx=(25, 25))
 bence_emoji = Label(master, text="🏆", bg="black",fg="red",font=('Times', 35))
 bence_emoji.grid(row= 3, column=2, pady=5,padx=(25, 25))
 aron_emoji = Label(master, text="⚽", bg="black",fg="red",font=('Times', 35))
