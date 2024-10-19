@@ -1,2 +1,4 @@
 Szia; BENCE
 ASDDD; BENCE
+Hello; BENCE
+Szia Bence; ÁRON

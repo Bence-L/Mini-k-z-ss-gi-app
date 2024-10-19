@@ -35,7 +35,7 @@ def aron_ablak():
                             'Kiküldte': adat[1]
                         })
         except FileNotFoundError:
-            print("Az uzenetek.txt fajl nem talalhato.")
+            print("Az uzenetek.txt fájl nem található.")
 
     def iras():
         sorkoz = 6  
@@ -44,10 +44,10 @@ def aron_ablak():
                 widget.grid_forget()
         
         for i in kiuzent:
-            if i['Kiküldte'] == "ÁRON":
-                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20", fg="red", bg="#00FF9C")
-            else:
-                uzenetlabel = Label(aron_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20", fg="black", bg="#00FF9C")
+            if i['Kiküldte'].strip() == "ÁRON":  # Áron üzenete
+                uzenetlabel = Label(aron_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20",fg="black", bg="#00FF9C")
+            else:  # Bence üzenete
+                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="red")
             uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=50)  # Középre helyezés
             sorkoz += 1
 
@@ -72,3 +72,4 @@ def aron_ablak():
     aron_ablak.mainloop()
 
 aron_ablak()
+
