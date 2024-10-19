@@ -72,4 +72,4 @@ def bence_ablak():
     
     bence_ablak.mainloop()
 
-bence_ablak()
+#bence_ablak()

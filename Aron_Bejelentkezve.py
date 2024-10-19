@@ -46,10 +46,10 @@ def aron_ablak():
         for i in kiuzent:
             if i['Kiküldte'].strip() == "ÁRON":  #ÁRON
                 uzenetlabel = Label(aron_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20",fg="black", bg="#00FF9C")
-                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
+                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0)) 
             else:  #BENCE
                 uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="red")
-                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0)) 
+                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
             sorkoz += 1
 
     aron_ablak = Tk()
@@ -72,5 +72,5 @@ def aron_ablak():
     
     aron_ablak.mainloop()
 
-aron_ablak()
+#aron_ablak()
 
