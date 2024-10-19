@@ -8,7 +8,7 @@ def aronfuggveny():
     master.configure(bg="black")
     
     def ujabblaknyitas_aronnak():
-        Aron_Bejelentkezve.ablakja()
+        Aron_Bejelentkezve.aron_ablak()
 
     ÁRON_ábra= Label(master, text="📞", fg="red", bg="black",font=('Times', 70, 'bold'))
     ÁRON_ábra.grid(row= 0, columnspan=3,pady=(10,0), padx=320)

@@ -7,7 +7,7 @@ def bencefuggveny():
     master.title("Bence profilja")
     master.configure(bg="black")
     def ujabblaknyitas():
-                Bence_Bejelentkezve.alkalmazás()
+                Bence_Bejelentkezve.bence_ablak()
     
     ábra= Label(master, text="📞", fg="red", bg="black",font=('Times', 70, 'bold'))
     ábra.grid(row= 0, columnspan=3,pady=(10,0), padx=320)
