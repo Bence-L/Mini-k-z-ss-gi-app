@@ -4,7 +4,7 @@ def bence_ablak():
     def megnyomva():
         uzenet = ide_irjon.get()
         elkuldve = Label(bence_ablak, text="Elküldve", bg="black", fg="red", font=('Times', 10, 'bold'))
-        elkuldve.grid(row=5, pady=10, padx=(0,550))
+        elkuldve.grid(row=5, pady=10, padx=(0, 550))
         
         def eltavolit():
             elkuldve.destroy()
@@ -45,11 +45,10 @@ def bence_ablak():
         
         for i in kiuzent:
             if i['Kiküldte'] == "BENCE":
-                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20",fg="black", bg="#00FF9C")
-                uzenetlabel.grid(row=sorkoz, column=1, pady=5, padx=(550, 0))
+                uzenetlabel = Label(bence_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20", fg="black", bg="#00FF9C")
             else:
-                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 15",fg="black", bg="#00FF9C")
-                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(480, 0))
+                uzenetlabel = Label(bence_ablak, text=f"Bence: {i['Üzenet']}", font="Times 10", fg="red", bg="white")
+            uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=50)  # Középre helyezés
             sorkoz += 1
 
     bence_ablak = Tk()
@@ -60,12 +59,12 @@ def bence_ablak():
     bence_cim.grid(row=0, columnspan=1, pady=10, padx=60)
 
     chatfal = Label(bence_ablak, text="Írja ide az üzenetét:", bg="black", fg="red", font=('Helvetica', 15, 'bold'))
-    chatfal.grid(row=3, pady=10, padx=(0,550))
+    chatfal.grid(row=3, pady=10, padx=(0, 550))
     ide_irjon = Entry(bence_ablak, width=20, bg="#00FF9C")
-    ide_irjon.grid(row=4, pady=0, padx=(0,560))
+    ide_irjon.grid(row=4, pady=0, padx=(0, 560))
 
     bekuldesgomb = Button(bence_ablak, text="=>", bg="#00FF9C", font="Times 8", borderwidth=3, command=megnyomva)
-    bekuldesgomb.grid(row=4, pady=0, padx=(0,440))
+    bekuldesgomb.grid(row=4, pady=0, padx=(0, 440))
 
     beszelgetni()
     iras()
@@ -73,3 +72,4 @@ def bence_ablak():
     bence_ablak.mainloop()
 
 bence_ablak()
+
