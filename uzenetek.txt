@@ -1,9 +1,3 @@
-Szia; BENCE
-ASDDD; BENCE
-Hello; BENCE
-Szia Bence; ÁRON
-asd; BENCE
-Na szélre ment; BENCE
-SZoa; ÁRON
-Hogy vagy?; ÁRON
-Jól amúgy; BENCE
+Szia Berci; BENCE
+Segged kivan; BENCE
+Tiéd van kinn; ÁRON
