@@ -31,9 +31,12 @@ def benceinfo():
     szin = Label(informacioB, text="Szín: Narancs🏀", bg="black", fg="orange", font=('Comic Sans', 12, 'bold'))
     szin.grid(row=7,column=0,pady=2, padx=20)
 
+    galeria_gomb = Button(informacioB, text="Galéria", bg="#285cfa", fg="white", font="sans 13 bold")  #command=)
+    galeria_gomb.grid(row=8, column=0, pady=10, padx=30)
+    
     # Bezáró gomb
-    bezaro_gomb = Button(informacioB, text="Bezárás", bg="#ed735a", font="sans 13 bold", command=informacioB.destroy)
-    bezaro_gomb.grid(row=8, column=0, pady=10, padx=30)
+    bezaro_gomb = Button(informacioB, text="Bezárás", bg="#ed735a", font="sans 20 bold", command=informacioB.destroy)
+    bezaro_gomb.grid(row=9, column=0, pady=10, padx=30)
 
 #egyik szín #285cfa
 #masik szín #28e8fa

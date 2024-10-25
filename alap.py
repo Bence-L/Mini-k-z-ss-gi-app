@@ -17,7 +17,6 @@ master.configure(bg="black")
 def openNewWindow():
     Áron_Profilja.aronfuggveny()
     
-    
 def openNewWindow2():
     Bence_Profilja.bencefuggveny()
 
