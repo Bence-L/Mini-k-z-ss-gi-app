@@ -67,6 +67,8 @@ def bence_ablak():
     bekuldesgomb = Button(bence_ablak, text="=>", bg="#28e8fa", font="Times 8", borderwidth=3, command=megnyomva)
     bekuldesgomb.grid(row=4, pady=0, padx=(0, 440))
 
+    #gomb = Button(bence_ablak, text="Bezárás", bg="#ed735a", font="sans 23 bold", command=bence_ablak.destroy).grid(row=5, column=1,pady=75,padx=20)
+
     beszelgetni()
     iras()
     

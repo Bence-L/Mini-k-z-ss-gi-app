@@ -22,7 +22,7 @@ def aronfuggveny():
     jelszo_aron = Label(master, text="Írja be a jelszóját: ", fg="#28e8fa", bg="black", font=('Comic Sans', 10, 'bold'))
     jelszo_aron.grid(row=4, columnspan=3, pady=4, padx=5)
 
-    aron_erteke = Entry(master, width=20, fg="#black", bg="#28e8fa",  borderwidth=2)
+    aron_erteke = Entry(master, width=20, fg="black", bg="#28e8fa",  borderwidth=2)
     aron_erteke.grid(row=5, columnspan=3, pady=3, padx=5)
     
     def ellenoriz_aronnak():
@@ -36,4 +36,8 @@ def aronfuggveny():
 
     ellenorzo_aronnak = Button(master, text="Ellenőrzés!", fg="#28e8fa", bg="black", font="sans 13 bold", command=ellenoriz_aronnak)
     ellenorzo_aronnak.grid(row=8, column=1, pady=10, padx=20)
+
+    # Bezáró gomb
+    bezaro_gomb = Button(master, text="Bezárás", bg="#ed735a", font="sans 13 bold", command=master.destroy)
+    bezaro_gomb.grid(row=9, column=1, pady=10, padx=20)
 

@@ -3,7 +3,7 @@ from tkinter import Tk, Label, Entry, Button
 def aron_ablak():
     def megnyomva():
         uzenet = ide_irjon.get()
-        elkuldve = Label(aron_ablak, text="Elküldve", bg="black", fg="red", font=('Times', 10, 'bold'))
+        elkuldve = Label(aron_ablak, text="Elküldve", bg="black", fg="#ed735a", font=('Times', 10, 'bold'))
         elkuldve.grid(row=5, pady=10, padx=(0, 550))
         
         def eltavolit():
@@ -45,10 +45,10 @@ def aron_ablak():
         
         for i in kiuzent:
             if i['Kiküldte'].strip() == "ÁRON":  #ÁRON
-                uzenetlabel = Label(aron_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20",fg="black", bg="#00FF9C")
+                uzenetlabel = Label(aron_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0)) 
             else:  #BENCE
-                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="red")
+                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
             sorkoz += 1
 
@@ -56,10 +56,10 @@ def aron_ablak():
     aron_ablak.geometry("700x900")
     aron_ablak.configure(bg="black")
     aron_ablak.title("Áron profilja")
-    aron_cim = Label(aron_ablak, text="Áron profilja🎁", fg="red", bg="black", font=('Times', 50, 'bold'))
+    aron_cim = Label(aron_ablak, text="Áron profilja🎁", fg="#28e8fa", bg="black", font=('Times', 50, 'bold'))
     aron_cim.grid(row=0, columnspan=1, pady=10, padx=60)
 
-    chatfal = Label(aron_ablak, text="Írja ide az üzenetét:", bg="black", fg="red", font=('Helvetica', 15, 'bold'))
+    chatfal = Label(aron_ablak, text="Írja ide az üzenetét:", bg="black", fg="#28e8fa", font=('Helvetica', 15, 'bold'))
     chatfal.grid(row=3, pady=10, padx=(0, 550))
     ide_irjon = Entry(aron_ablak, width=20, bg="#00FF9C")
     ide_irjon.grid(row=4, pady=0, padx=(0, 560))
@@ -73,4 +73,6 @@ def aron_ablak():
     aron_ablak.mainloop()
 
 #aron_ablak()
-
+#egyik szín #285cfa
+#masik szín #28e8fa
+#gomb szín #ed735a
