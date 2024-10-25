@@ -48,7 +48,7 @@ def aron_ablak():
                 uzenetlabel = Label(aron_ablak, text=f"Én: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0)) 
             else:  #BENCE
-                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
+                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="#285cfa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
             sorkoz += 1
 

@@ -1,7 +1,8 @@
 from tkinter import *
 import Áron_Profilja
 import Bence_Profilja
-
+import Bence_információi
+import Áron_információi
 
 master = Tk()
 
@@ -19,6 +20,13 @@ def openNewWindow():
     
 def openNewWindow2():
     Bence_Profilja.bencefuggveny()
+
+def info1():
+    Bence_információi.benceinfo()
+
+def info2():
+    Áron_információi.aroninfo()
+
 ábra= Label(master, text="📞", fg="#28e8fa", bg="black",font=('Times', 80, 'bold'))
 ábra.grid(row= 0, columnspan=3,pady=(10,0), padx=320)
 cím = Label(master, text="Messenger+", fg="#28e8fa",bg="black",font=('Times', 60,'bold'))
@@ -32,6 +40,8 @@ label = Label(master, text ="Válasszon egy profilt!",bg="black", fg="#28e8fa" ,
 # new window on button click
 aron_valaszt = Button(master, text ="Áron", bg="#28e8fa", font="Times 30 bold",  borderwidth=20,command = openNewWindow).grid(row= 4, column=0, pady=10,padx=(25, 25))
 bence_valaszt = Button(master, text ="Bence", bg="#28e8fa", font="Times 30 bold",  borderwidth=20, command = openNewWindow2).grid(row= 4, column=2, pady=10,padx=(25, 25))
+info_aron = Button(master, text ="Info-Áron", bg="#28e8fa", font="Times 20 bold",  borderwidth=10,command = info2).grid(row= 5, column=0, pady=10,padx=(25, 25))
+info_bence = Button(master, text ="Info-Bence", bg="#28e8fa", font="Times 20 bold",  borderwidth=10,command = info1).grid(row= 5, column=2, pady=10,padx=(25, 25))
 bence_emoji = Label(master, text="🏆", bg="black",fg="#28e8fa",font=('Times', 35))
 bence_emoji.grid(row= 3, column=2, pady=5,padx=(25, 25))
 aron_emoji = Label(master, text="⚽", bg="black",fg="#28e8fa",font=('Times', 35))
