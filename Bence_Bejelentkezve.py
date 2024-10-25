@@ -45,10 +45,10 @@ def bence_ablak():
         
         for i in kiuzent:
             if i['Kiküldte'].strip() == "BENCE":  # Bence üzenete
-                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20", fg="black", bg="#00FF9C")
+                uzenetlabel = Label(bence_ablak, text=f"Én: {i['Üzenet']}", font="Times 20", fg="black", bg="#28e8fa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0))
             else:  # Áron üzenete
-                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20", fg="black", bg="red")
+                uzenetlabel = Label(bence_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20", fg="black", bg="#285cfa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
             sorkoz += 1
 
@@ -56,15 +56,15 @@ def bence_ablak():
     bence_ablak.geometry("700x900")
     bence_ablak.configure(bg="black")
     bence_ablak.title("Bence profilja")
-    bence_cim = Label(bence_ablak, text="Bence profilja🕸", fg="red", bg="black", font=('Times', 50, 'bold'))
+    bence_cim = Label(bence_ablak, text="Bence profilja🕸", fg="#28e8fa", bg="black", font=('Times', 50, 'bold'))
     bence_cim.grid(row=0, columnspan=1, pady=10, padx=60)
 
-    chatfal = Label(bence_ablak, text="Írja ide az üzenetét:", bg="black", fg="red", font=('Helvetica', 15, 'bold'))
+    chatfal = Label(bence_ablak, text="Írja ide az üzenetét:", bg="black", fg="#28e8fa", font=('Helvetica', 15, 'bold'))
     chatfal.grid(row=3, pady=10, padx=(0, 550))
-    ide_irjon = Entry(bence_ablak, width=20, bg="#00FF9C")
+    ide_irjon = Entry(bence_ablak, width=20, bg="#28e8fa")
     ide_irjon.grid(row=4, pady=0, padx=(0, 560))
 
-    bekuldesgomb = Button(bence_ablak, text="=>", bg="#00FF9C", font="Times 8", borderwidth=3, command=megnyomva)
+    bekuldesgomb = Button(bence_ablak, text="=>", bg="#28e8fa", font="Times 8", borderwidth=3, command=megnyomva)
     bekuldesgomb.grid(row=4, pady=0, padx=(0, 440))
 
     beszelgetni()
