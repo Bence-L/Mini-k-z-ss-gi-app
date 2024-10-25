@@ -45,7 +45,7 @@ def aron_ablak():
         
         for i in kiuzent:
             if i['Kiküldte'].strip() == "ÁRON":  #ÁRON
-                uzenetlabel = Label(aron_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
+                uzenetlabel = Label(aron_ablak, text=f"Én: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0)) 
             else:  #BENCE
                 uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
@@ -61,10 +61,10 @@ def aron_ablak():
 
     chatfal = Label(aron_ablak, text="Írja ide az üzenetét:", bg="black", fg="#28e8fa", font=('Helvetica', 15, 'bold'))
     chatfal.grid(row=3, pady=10, padx=(0, 550))
-    ide_irjon = Entry(aron_ablak, width=20, bg="#00FF9C")
+    ide_irjon = Entry(aron_ablak, width=20, bg="#285cfa")
     ide_irjon.grid(row=4, pady=0, padx=(0, 560))
 
-    bekuldesgomb = Button(aron_ablak, text="=>", bg="#00FF9C", font="Times 8", borderwidth=3, command=megnyomva)
+    bekuldesgomb = Button(aron_ablak, text="=>", bg="#285cfa", font="Times 8", borderwidth=3, command=megnyomva)
     bekuldesgomb.grid(row=4, pady=0, padx=(0, 440))
 
     beszelgetni()
