@@ -45,10 +45,10 @@ def bence_ablak():
         
         for i in kiuzent:
             if i['Kiküldte'].strip() == "BENCE":  # Bence üzenete
-                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20", fg="black", bg="#28e8fa")
+                uzenetlabel = Label(bence_ablak, text=f"Én: {i['Üzenet']}", font="Times 20", fg="black", bg="#28e8fa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0))
             else:  # Áron üzenete
-                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20", fg="black", bg="#285cfa")
+                uzenetlabel = Label(bence_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20", fg="black", bg="#285cfa")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
             sorkoz += 1
 
