@@ -3,7 +3,7 @@ from tkinter import Tk, Label, Entry, Button
 def bence_ablak():
     def megnyomva():
         uzenet = ide_irjon.get()
-        elkuldve = Label(bence_ablak, text="Elküldve", bg="black", fg="red", font=('Times', 10, 'bold'))
+        elkuldve = Label(bence_ablak, text="Elküldve", bg="black", fg="#285cfa", font=('Times', 10, 'bold'))
         elkuldve.grid(row=5, pady=10, padx=(0, 550))
         
         def eltavolit():
@@ -45,10 +45,10 @@ def bence_ablak():
         
         for i in kiuzent:
             if i['Kiküldte'].strip() == "BENCE":  # Bence üzenete
-                uzenetlabel = Label(bence_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20", fg="black", bg="#00FF9C")
+                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20", fg="black", bg="#00FF9C")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0))
             else:  # Áron üzenete
-                uzenetlabel = Label(bence_ablak, text=f"Áron: {i['Üzenet']}", font="Times 20", fg="black", bg="red")
+                uzenetlabel = Label(bence_ablak, text=i['Üzenet'], font="Times 20", fg="black", bg="red")
                 uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
             sorkoz += 1
 
@@ -73,3 +73,6 @@ def bence_ablak():
     bence_ablak.mainloop()
 
 #bence_ablak()
+#egyik szín #285cfa
+#masik szín #28e8fa
+#gomb szín #ed735a
