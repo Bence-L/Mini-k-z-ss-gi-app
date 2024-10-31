@@ -25,13 +25,13 @@ def aroninfo():
     nev_adatok = Label(informacioA, text="Neve: Varga Áron", bg="black", fg="#28e8fa", font=('Comic Sans', 12, 'bold'))
     nev_adatok.grid(row=4,column=0,pady=2, padx=20)
 
-    szuletesi_adatok = Label(informacioA, text="Született: ....", bg="black", fg="#28e8fa", font=('Comic Sans', 12, 'bold'))
+    szuletesi_adatok = Label(informacioA, text="Született: 2007.12.20.", bg="black", fg="#28e8fa", font=('Comic Sans', 12, 'bold'))
     szuletesi_adatok.grid(row=5,column=0,pady=2, padx=20)
 
-    sport = Label(informacioA, text="Sport: ....", bg="black", fg="#28e8fa", font=('Comic Sans', 12, 'bold'))
+    sport = Label(informacioA, text="Sport: Darts🎯", bg="black", fg="#28e8fa", font=('Comic Sans', 12, 'bold'))
     sport.grid(row=6,column=0,pady=2, padx=20)
 
-    szin = Label(informacioA, text="Szín: ....", bg="black", fg="orange", font=('Comic Sans', 12, 'bold'))
+    szin = Label(informacioA, text="Szín: Zöld", bg="black", fg="green", font=('Comic Sans', 12, 'bold'))
     szin.grid(row=7,column=0,pady=2, padx=20)
 
     galeria_gombA = Button(informacioA, text="Galéria", bg="#285cfa", fg="white", font="sans 13 bold",  command=nyisdmegaronet)
