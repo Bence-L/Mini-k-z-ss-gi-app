@@ -5,15 +5,11 @@ import Bence_információi
 import Áron_információi
 
 master = Tk()
-
-
-# sets the geometry and the title of the main root window
 master.geometry("1000x800")
 master.title("Főoldal")
 master.configure(bg="black")
 
-# function to open a new window 
-# on a button click
+#Gombok funkciói
 def openNewWindow():
     Áron_Profilja.aronfuggveny()
     
@@ -26,10 +22,13 @@ def info1():
 def info2():
     Áron_információi.aroninfo()
 
+#Emoji + ismertető szövegek
 ábra= Label(master, text="📞", fg="#28e8fa", bg="black",font=('Times', 80, 'bold'))
 ábra.grid(row= 0, columnspan=3,pady=(10,0), padx=320)
+
 cím = Label(master, text="Messenger+", fg="#28e8fa",bg="black",font=('Times', 60,'bold'))
 cím.grid(row= 1, columnspan=3,pady=(1,0), padx=320)
+
 label = Label(master, text ="Válasszon egy profilt!",bg="black", fg="#28e8fa" ,font="sans 16 bold").grid(row= 2, columnspan=3, pady=(10,40), padx=5)
 
 #GOMBSTÍLUS
@@ -49,7 +48,3 @@ aron_emoji.grid(row= 3, pady=5,padx=(25, 25))
 bezaro_gomb = Button(master, text="Bezárás", bg="#ed735a", font="sans 23 bold", command=master.destroy).grid(row=6, column=1,pady=75,padx=20)
 
 mainloop()
-
-#egyik szín #285cfa
-#masik szín #28e8fa
-#gomb szín #ed735a

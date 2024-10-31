@@ -1,4 +1,6 @@
 from tkinter import *
+import BENCE_GALÉRIA
+
 
 
 def benceinfo():
@@ -7,6 +9,9 @@ def benceinfo():
     informacioB.title("Bence-Információ")
     informacioB.configure(bg="black")
     
+    def nyisdmeg():
+        BENCE_GALÉRIA.bencegaleria()
+
     emoji = Label(informacioB, text="📜", bg="black", fg="#28e8fa", font=('Comic Sans', 50, 'bold'))
     emoji.grid(row=0, column=0, pady=5, padx=30)
 
@@ -31,7 +36,7 @@ def benceinfo():
     szin = Label(informacioB, text="Szín: Narancs🏀", bg="black", fg="orange", font=('Comic Sans', 12, 'bold'))
     szin.grid(row=7,column=0,pady=2, padx=20)
 
-    galeria_gomb = Button(informacioB, text="Galéria", bg="#285cfa", fg="white", font="sans 13 bold")  #command=)
+    galeria_gomb = Button(informacioB, text="Galéria", bg="#285cfa", fg="white", font="sans 13 bold",  command=nyisdmeg)
     galeria_gomb.grid(row=8, column=0, pady=10, padx=30)
     
     # Bezáró gomb
