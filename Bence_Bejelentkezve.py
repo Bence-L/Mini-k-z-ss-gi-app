@@ -54,7 +54,7 @@ def bence_ablak():
         canvas.yview_moveto(1.0)
 
     bence_ablak = Tk()
-    bence_ablak.geometry("700x700")
+    bence_ablak.geometry("900x700")
     bence_ablak.configure(bg="black")
     bence_ablak.title("Bence profilja")
     bence_cim = Label(bence_ablak, text="Bence profilja🕸", fg="#28e8fa", bg="black", font=('Times', 30, 'bold'))
@@ -89,10 +89,3 @@ def bence_ablak():
     
     bence_ablak.mainloop()
 
-bence_ablak()
-
-
-#bence_ablak()
-#egyik szín #285cfa
-#masik szín #28e8fa
-#gomb szín #ed735a

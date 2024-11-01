@@ -1,10 +1,10 @@
-from tkinter import Tk, Label, Entry, Button
+from tkinter import Tk, Label, Entry, Button, Canvas, Scrollbar, Frame, VERTICAL
 
 def aron_ablak():
     def megnyomva():
         uzenet = ide_irjon.get()
         elkuldve = Label(aron_ablak, text="Elküldve", bg="black", fg="#ed735a", font=('Times', 10, 'bold'))
-        elkuldve.grid(row=5, pady=10, padx=(0, 550))
+        elkuldve.grid(row=4, column=1, pady=10, padx=(0, 300))
         
         def eltavolit():
             elkuldve.destroy()
@@ -38,41 +38,54 @@ def aron_ablak():
             print("Az uzenetek.txt fájl nem található.")
 
     def iras():
-        sorkoz = 6  
-        for widget in aron_ablak.grid_slaves():
-            if int(widget.grid_info()["row"]) >= 6:
-                widget.grid_forget()
+        for widget in message_frame.winfo_children():
+            widget.destroy()
         
+        sorkoz = 0  
         for i in kiuzent:
-            if i['Kiküldte'].strip() == "ÁRON":  #ÁRON
-                uzenetlabel = Label(aron_ablak, text=f"Én: {i['Üzenet']}", font="Times 20",fg="black", bg="#28e8fa")
-                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(400,0)) 
-            else:  #BENCE
-                uzenetlabel = Label(aron_ablak, text=f"Bence: {i['Üzenet']}", font="Times 20",fg="black", bg="#285cfa")
-                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(0,160))
+            if i['Kiküldte'].strip() == "ÁRON":  # Áron üzenete
+                uzenetlabel = Label(message_frame, text=f"Én: {i['Üzenet']}", font="Times 20", fg="black", bg="#28e8fa")
+                uzenetlabel.grid(row=sorkoz, column=1, pady=5, padx=(150,0), sticky='e')
+            else:  # Bence üzenete
+                uzenetlabel = Label(message_frame, text=f"Bence: {i['Üzenet']}", font="Times 20", fg="black", bg="#285cfa")
+                uzenetlabel.grid(row=sorkoz, column=0, pady=5, padx=(10,100), sticky='w')
             sorkoz += 1
+        canvas.update_idletasks()
+        canvas.yview_moveto(1.0)
 
     aron_ablak = Tk()
-    aron_ablak.geometry("700x900")
+    aron_ablak.geometry("900x700")
     aron_ablak.configure(bg="black")
     aron_ablak.title("Áron profilja")
-    aron_cim = Label(aron_ablak, text="Áron profilja🎁", fg="#28e8fa", bg="black", font=('Times', 50, 'bold'))
-    aron_cim.grid(row=0, columnspan=1, pady=10, padx=60)
+    aron_cim = Label(aron_ablak, text="Áron profilja🎁", fg="#28e8fa", bg="black", font=('Times', 30, 'bold'))
+    aron_cim.grid(row=0, columnspan=2, pady=10, padx=40)
 
-    chatfal = Label(aron_ablak, text="Írja ide az üzenetét:", bg="black", fg="#28e8fa", font=('Helvetica', 15, 'bold'))
-    chatfal.grid(row=3, pady=10, padx=(0, 550))
+    canvas = Canvas(aron_ablak, bg="black")
+    canvas.grid(row=1, column=0, columnspan=2, sticky='nsew')
+
+    scrollbar = Scrollbar(aron_ablak, orient=VERTICAL, command=canvas.yview)
+    scrollbar.grid(row=1, column=2, sticky='ns')
+
+    canvas.configure(yscrollcommand=scrollbar.set)
+
+    message_frame = Frame(canvas, bg="black")
+    canvas.create_window((0, 0), window=message_frame, anchor='nw')
+
+    message_frame.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+
+    chatfal = Label(aron_ablak, text="Írja ide az üzenetét:", bg="black", fg="#28e8fa", font=('Helvetica', 12, 'bold'))
+    chatfal.grid(row=2, columnspan=2, pady=10, padx=40)
     ide_irjon = Entry(aron_ablak, width=20, bg="#285cfa")
-    ide_irjon.grid(row=4, pady=0, padx=(0, 560))
+    ide_irjon.grid(row=3, columnspan=2, pady=10, padx=40)
 
     bekuldesgomb = Button(aron_ablak, text="=>", bg="#285cfa", font="Times 8", borderwidth=3, command=megnyomva)
-    bekuldesgomb.grid(row=4, pady=0, padx=(0, 440))
+    bekuldesgomb.grid(row=3, columnspan=2, pady=10, padx=(170,10))
+
+    aron_ablak.grid_rowconfigure(1, weight=1)
+    aron_ablak.grid_columnconfigure(0, weight=1)
 
     beszelgetni()
     iras()
     
     aron_ablak.mainloop()
 
-#aron_ablak()
-#egyik szín #285cfa
-#masik szín #28e8fa
-#gomb szín #ed735a
