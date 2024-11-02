@@ -21,7 +21,8 @@ def bencefuggveny():
     jelszo_bence = Label(master, text="Írja be a jelszóját: ", fg="#28e8fa", bg="black", font=('Comic Sans', 10, 'bold'))
     jelszo_bence.grid(row=4, columnspan=3, pady=4, padx=5)
 
-    bence_erteke = Entry(master, width=20, bg="#28e8fa")
+    # A jelszó bevitelének elrejtése
+    bence_erteke = Entry(master, width=20, bg="#28e8fa", show="*")
     bence_erteke.grid(row=5, columnspan=3, pady=3, padx=5)
 
     def ellenoriz():
@@ -41,6 +42,8 @@ def bencefuggveny():
     # Bezáró gomb
     bezaro_gomb = Button(master, text="Bezárás", bg="#ed735a", font="sans 13 bold", command=master.destroy)
     bezaro_gomb.grid(row=8, column=1, pady=10, padx=20)
+
+
 
 #egyik szín #285cfa
 #masik szín #28e8fa

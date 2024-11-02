@@ -1,2 +1,22 @@
-Szia ez egy próba; BENCE
-Ez  a kép kerül a dokumentációba.; ÁRON
+Szia; BENCE
+Szia hogy vagy?; ÁRON
+Én jól te hogy vagy?; BENCE
+Nem működik teljesen az ; BENCE
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; ÁRON
+Hello; BENCE
+a; BENCE
+Szia; BENCE
+aa; BENCE
+aa; BENCE
+a; BENCE
+a; BENCE
+a; BENCE
+szia; BENCE
+Szia így működik?; ÁRON
+naná; BENCE
+igen; BENCE
+a; BENCE
+a; BENCE
+b; BENCE
+a; BENCE
+szia; BENCE
