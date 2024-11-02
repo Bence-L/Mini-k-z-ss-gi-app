@@ -108,5 +108,3 @@ def aron_ablak():
     
     aron_ablak.mainloop()
 
-# Futtatás
-aron_ablak()
