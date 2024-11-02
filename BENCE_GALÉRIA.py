@@ -12,7 +12,9 @@ def bencegaleria():
     kepek = [
         r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\elsokep.jpg",
         r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\masodikkep.jpg",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\harmadikkep.jpg"
+        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\harmadikkep.jpg",
+        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\hetedik.webp",
+        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\nyolcadik.jpg"
     ]
     
     global index, img 

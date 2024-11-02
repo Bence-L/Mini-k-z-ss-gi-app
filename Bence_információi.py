@@ -36,7 +36,7 @@ def benceinfo():
     szin = Label(informacioB, text="Szín: Narancs🏀", bg="black", fg="orange", font=('Comic Sans', 12, 'bold'))
     szin.grid(row=7,column=0,pady=2, padx=20)
 
-    galeria_gomb = Button(informacioB, text="Galéria", bg="#285cfa", fg="white", font="sans 13 bold",  command=nyisdmeg)
+    galeria_gomb = Button(informacioB, text="Galéria", bg="#28e8fa", fg="white", font="sans 16 bold",  command=nyisdmeg)
     galeria_gomb.grid(row=8, column=0, pady=10, padx=30)
     
     # Bezáró gomb
