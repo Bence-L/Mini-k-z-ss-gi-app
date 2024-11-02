@@ -27,7 +27,7 @@ def aronfuggveny():
     
     def ellenoriz_aronnak():
         bekert_ertek_aron = aron_erteke.get()
-        if bekert_ertek_aron == "asd":
+        if bekert_ertek_aron == "Áron":
             master.destroy()
             ujabblaknyitas_aronnak()
         else:

@@ -1,17 +1,2 @@
-Szia; BENCE
-Hello; BENCE
-Hali; ÁRON
-Szia; BENCE
-AD; BENCE
-asd; BENCE
-na; BENCE
-asd; BENCE
-
-Hogy ityeg a fityeg?; BENCE
-a; BENCE
-a; BENCE
-Csao hello hello; ÁRON
-Na nézzük; BENCE
-AJAJAJJAJAJAJAJAJJAJA; BENCE
-Szia; ÁRON
-CSUMPALUMPAAA; BENCE
+Szia ez egy próba; BENCE
+Ez  a kép kerül a dokumentációba.; ÁRON

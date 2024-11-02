@@ -26,7 +26,7 @@ def bencefuggveny():
 
     def ellenoriz():
         bekert_ertek = bence_erteke.get()
-        if bekert_ertek == "Reggel":
+        if bekert_ertek == "Bence":
             # Fő ablak bezárása sikeres bejelentkezés esetén
             master.destroy()
             ujabblaknyitas()
