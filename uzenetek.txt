@@ -2,3 +2,5 @@
 Szia jó reggelt; ÁRON
 Szia neked is; BENCE
 Hogy vagy ma mi van veled?; BENCE
+Csao ez egy teszt; BENCE
+csúcsszuper; ÁRON
