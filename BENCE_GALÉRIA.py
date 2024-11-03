@@ -10,11 +10,11 @@ def bencegaleria():
 
     #A képek elérési útvonala
     kepek = [
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\elsokep.jpg",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\masodikkep.jpg",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\harmadikkep.jpg",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\hetedik.webp",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\nyolcadik.jpg"
+        r"elsokep.jpg",
+        r"masodikkep.jpg",
+        r"harmadikkep.jpg",
+        r"hetedik.webp",
+        r"nyolcadik.jpg"
     ]
     
     global index, img 
