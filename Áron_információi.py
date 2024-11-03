@@ -3,7 +3,7 @@ import ÁRON_GALÉRIA
 
 def aroninfo():
     informacioA = Tk()
-    informacioA.geometry("480x700")
+    informacioA.geometry("450x700")
     informacioA.title("Áron-Információ")
     informacioA.configure(bg="black")
     

@@ -10,9 +10,9 @@ def arongaleria():
 
     #A Képek elérési útvonala
     kepek = [
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\negyedik.png",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\otodik.jpeg",
-        r"C:\Bence mindenes\11\000.copy\Mini-kozossegi_app\hatodik.jpg"
+        r"negyedik.png",
+        r"otodik.jpeg",
+        r"hatodik.jpg"
     ]
     
     global index, img  
