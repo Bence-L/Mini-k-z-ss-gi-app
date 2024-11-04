@@ -3,6 +3,7 @@ import Áron_Profilja
 import Bence_Profilja
 import Bence_információi
 import Áron_információi
+import fal
 
 master = Tk()
 master.geometry("1000x800")
@@ -22,6 +23,8 @@ def info1():
 #Áron információs ablakát nyitja meg
 def info2():
     Áron_információi.aroninfo()
+def nyisdmegafalat():
+    fal.falresz()
 
 #Emoji + ismertető szövegek
 ábra= Label(master, text="📞", fg="#28e8fa", bg="black",font=('Times', 80, 'bold'))
@@ -34,12 +37,15 @@ label = Label(master, text ="Válasszon egy profilt!",bg="black", fg="#28e8fa" ,
 #Gombok, profil választás, és információk
 aron_valaszt = Button(master, text ="Áron", bg="#28e8fa", font="Times 30 bold",  borderwidth=20,command = openNewWindow).grid(row= 4, column=0, pady=10,padx=(25, 25))
 bence_valaszt = Button(master, text ="Bence", bg="#28e8fa", font="Times 30 bold",  borderwidth=20, command = openNewWindow2).grid(row= 4, column=2, pady=10,padx=(25, 25))
+bence_valaszt = Button(master, text ="Fal", bg="#28e8fa", font="Times 30 bold",  borderwidth=20, command = nyisdmegafalat).grid(row= 4, column=1, pady=10,padx=(25, 25))
 info_aron = Button(master, text ="Info-Áron", bg="#28e8fa", font="Times 20 bold",  borderwidth=10,command = info2).grid(row= 5, column=0, pady=10,padx=(25, 25))
 info_bence = Button(master, text ="Info-Bence", bg="#28e8fa", font="Times 20 bold",  borderwidth=10,command = info1).grid(row= 5, column=2, pady=10,padx=(25, 25))
 bence_emoji = Label(master, text="🏆", bg="black",fg="#28e8fa",font=('Times', 35))
 bence_emoji.grid(row= 3, column=2, pady=5,padx=(25, 25))
 aron_emoji = Label(master, text="⚽", bg="black",fg="#28e8fa",font=('Times', 35))
 aron_emoji.grid(row= 3, pady=5,padx=(25, 25))
+fal_emoji = Label(master, text="🎪", bg="black",fg="#28e8fa",font=('Times', 35))
+fal_emoji.grid(row= 3, column=1,pady=5,padx=(25, 25))
 #Bezáró button
 bezaro_gomb = Button(master, text="Bezárás", bg="#ed735a", font="sans 23 bold", command=master.destroy).grid(row=6, column=1,pady=75,padx=20)
 
