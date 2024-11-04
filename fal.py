@@ -127,4 +127,4 @@ def falresz():
     piros_gomb.grid(row=5, pady=10, padx=(10,10))
     fal_ablak.mainloop()
 
-falresz()
+#falresz()
