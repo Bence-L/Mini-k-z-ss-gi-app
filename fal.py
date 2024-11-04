@@ -5,7 +5,7 @@ def falresz():
     fal_ablak.geometry("1800x750")
     fal_ablak.configure(bg="black")
     fal_ablak.title("Fal")
-    fal_cim = Label(fal_ablak, text="Fal🍔", fg="#fed766", bg="black", font=('Times', 80, 'bold'))
+    fal_cim = Label(fal_ablak, text="Fal🍔", fg="#fed766", bg="black", font=('Times', 70, 'bold'))
     fal_cim.grid(row=0, column=0, pady=10, padx=40)
     
 
@@ -121,12 +121,14 @@ def falresz():
     fal_cim = Label(fal_ablak, text="Válassza ki milyen színű legyen az üzenet!\n🎨", fg="#FED766", bg="black", font=('Times', 20, 'bold'),width=3500)
     fal_cim.grid(row=4, column=0, pady=10, padx=40)
 
-    zold_gomb = Button(fal_ablak, text="Zöld", bg="green", font="Times 30", borderwidth=8, command=fal_zolden)
+    zold_gomb = Button(fal_ablak, text="Zöld", bg="green", font="Times 25", borderwidth=8, command=fal_zolden)
     zold_gomb.grid(row=5, pady=10, padx=(245,10))
-    narancs_gomb = Button(fal_ablak, text="Narancs", bg="orange", font="Times 30", borderwidth=8, command=fal_narancson)
+    narancs_gomb = Button(fal_ablak, text="Narancs", bg="orange", font="Times 25", borderwidth=8, command=fal_narancson)
     narancs_gomb.grid(row=5,  pady=10, padx=(10,300))
-    piros_gomb = Button(fal_ablak, text="Piros", bg="red", font="Times 30", borderwidth=8, command=fal_piroson)
+    piros_gomb = Button(fal_ablak, text="Piros", bg="red", font="Times 25", borderwidth=8, command=fal_piroson)
     piros_gomb.grid(row=5, pady=10, padx=(10,10))
+    bezaro_gomb = Button(fal_ablak, text="Bezárás", bg="#ed735a", font="sans 23 bold", command=fal_ablak.destroy).grid(row=6,pady=10,padx=(10,10))
     fal_ablak.mainloop()
+    
 
 #falresz()

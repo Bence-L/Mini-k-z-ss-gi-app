@@ -2,3 +2,19 @@ Sziasztok sziasztok; NARANCS
 Hali; PIROS
 Csao csao; ZÖLD
 ; PIROS
+; PIROS
+; ZÖLD
+; NARANCS
+; ZÖLD
+; NARANCS
+; PIROS
+; NARANCS
+; PIROS
+; PIROS
+; PIROS
+; PIROS
+; NARANCS
+; PIROS
+; PIROS
+; PIROS
+; ZÖLD
