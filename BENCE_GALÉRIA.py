@@ -31,10 +31,9 @@ def bencegaleria():
         img = img_list[index]
         # Kép beállítása
         img_label.config(image=img)
-        img_label.image = img  # Referencia megőrzése
-
-        # Kép méretének beállítása
-        img_label.config(width=500, height=500)  # Egységes méret
+        img_label.image = img
+        # Kép méretezése
+        img_label.config(width=500, height=500)
 
     # Lépés a következő képre
     def next_image():
