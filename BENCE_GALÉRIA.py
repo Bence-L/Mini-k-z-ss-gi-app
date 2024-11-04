@@ -65,4 +65,3 @@ def bencegaleria():
     bezaro_gomb = Button(GalériaB, text="Bezárás", bg="#ed735a", font="sans 23 bold", command=GalériaB.destroy)
     bezaro_gomb.grid(row=3, column=1, pady=5, padx=20)
 
-# Hívja meg a bencegaleria() függvényt a főablakból
