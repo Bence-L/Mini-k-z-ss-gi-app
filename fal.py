@@ -72,19 +72,19 @@ def falresz():
         sorkoz = 0  
         for i in kiuzent:
             if i['Szin'].strip() == "ZÖLD":  # Bence üzenete
-                uzenetlabel = Text(message_frame, wrap='word', font="Times 20", fg="black", bg="green", height=2, width=20)
+                uzenetlabel = Text(message_frame, wrap='word', font="Times 20", fg="black", bg="green", borderwidth=8, height=3, width=30)
                 uzenetlabel.insert(END, i['Üzenet'])
-                uzenetlabel.grid(row=sorkoz, pady=5, padx=(1300,10))
+                uzenetlabel.grid(row=sorkoz, pady=5, padx=(900,10))
                 uzenetlabel.config(state=DISABLED)
             if i['Szin'].strip() == "NARANCS":  # Bence üzenete
-                uzenetlabel = Text(message_frame, wrap='word', font="Times 20", fg="black", bg="orange", height=2, width=20)
+                uzenetlabel = Text(message_frame, wrap='word', font="Times 20", fg="black", bg="orange", borderwidth=8, height=3, width=30)
                 uzenetlabel.insert(END, i['Üzenet'])
                 uzenetlabel.grid(row=sorkoz, pady=5, padx=(10,1300))
                 uzenetlabel.config(state=DISABLED)
             if i['Szin'].strip() == "PIROS": # Áron üzenete
-                uzenetlabel = Text(message_frame, wrap='word', font="Times 20", fg="black", bg="red", height=2, width=20)
+                uzenetlabel = Text(message_frame, wrap='word', font="Times 20", fg="black", bg="red", borderwidth=8,height=3, width=30)
                 uzenetlabel.insert(END, i['Üzenet'])
-                uzenetlabel.grid(row=sorkoz, pady=5, padx=(10,10))
+                uzenetlabel.grid(row=sorkoz, pady=5, padx=(10,250))
                 uzenetlabel.config(state=DISABLED)
             sorkoz += 1
         
