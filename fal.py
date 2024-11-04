@@ -21,6 +21,7 @@ def falresz():
         fal_irjon.delete(0, 'end')  # Az Entry mező ürítése
         beszelgetni()  # Üzenetek frissítése
         iras()  # Üzenetek megjelenítése
+    
     def fal_narancson():
         uzenet = fal_irjon.get()  # Az Entry mezőből vett üzenet szövege
         # Üzenet mentése a fájlba
@@ -33,6 +34,7 @@ def falresz():
         fal_irjon.delete(0, 'end')  # Az Entry mező ürítése
         beszelgetni()  # Üzenetek frissítése
         iras() 
+    
     def fal_piroson():
         uzenet = fal_irjon.get()  # Az Entry mezőből vett üzenet szövege
         # Üzenet mentése a fájlba
