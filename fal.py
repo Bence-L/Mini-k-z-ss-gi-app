@@ -93,7 +93,7 @@ def falresz():
 
 
     # Canvas a görgethető tartalomhoz
-    canvas = Canvas(fal_ablak, bg="black")
+    canvas = Canvas(fal_ablak, bg="#272727")
     canvas.grid(row=1, column=0, columnspan=2, sticky='nsew')
 
     # Függőleges görgetősáv hozzáadása a canvas-hoz
@@ -102,7 +102,7 @@ def falresz():
     canvas.configure(yscrollcommand=scrollbar.set)
     
     # Frame a canvas tartalmához
-    message_frame = Frame(canvas, bg="black")
+    message_frame = Frame(canvas, bg="#272727")
     canvas.create_window((0, 0), window=message_frame, anchor='nw')
     
     # Dinamikus görgetési tartomány beállítása
@@ -112,16 +112,19 @@ def falresz():
     chatfal = Label(fal_ablak, text="Írja ide az üzenetét:", bg="black", fg="#fed766", font=('Helvetica', 12, 'bold'))
     chatfal.grid(row=2, columnspan=2, pady=5, padx=40)
     fal_irjon = Entry(fal_ablak, width=20, bg="#fed766")
-    fal_irjon.grid(row=3, columnspan=2, pady=5, padx=40)
+    fal_irjon.grid(row=3, columnspan=2, pady=(0,5), padx=40)
     fal_ablak.grid_rowconfigure(1, weight=1)
     fal_ablak.grid_columnconfigure(0, weight=1)
     
-    zold_gomb = Button(fal_ablak, text="Zöld", bg="green", font="Times 30", borderwidth=3, command=fal_zolden)
-    zold_gomb.grid(row=4, pady=10, padx=(230,10))
-    narancs_gomb = Button(fal_ablak, text="Narancs", bg="orange", font="Times 30", borderwidth=3, command=fal_narancson)
-    narancs_gomb.grid(row=4,  pady=10, padx=(10,300))
-    piros_gomb = Button(fal_ablak, text="Piros", bg="red", font="Times 30", borderwidth=3, command=fal_piroson)
-    piros_gomb.grid(row=4, pady=10, padx=(10,10))
+    fal_cim = Label(fal_ablak, text="Válassza ki milyen színű legyen az üzenet!\n🎨", fg="#FED766", bg="black", font=('Times', 20, 'bold'),width=3500)
+    fal_cim.grid(row=4, column=0, pady=10, padx=40)
+
+    zold_gomb = Button(fal_ablak, text="Zöld", bg="green", font="Times 30", borderwidth=8, command=fal_zolden)
+    zold_gomb.grid(row=5, pady=10, padx=(245,10))
+    narancs_gomb = Button(fal_ablak, text="Narancs", bg="orange", font="Times 30", borderwidth=8, command=fal_narancson)
+    narancs_gomb.grid(row=5,  pady=10, padx=(10,300))
+    piros_gomb = Button(fal_ablak, text="Piros", bg="red", font="Times 30", borderwidth=8, command=fal_piroson)
+    piros_gomb.grid(row=5, pady=10, padx=(10,10))
     fal_ablak.mainloop()
 
 falresz()
