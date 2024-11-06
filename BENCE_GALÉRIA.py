@@ -10,9 +10,7 @@ def bencegaleria():
     # A képek elérési útvonala
     kepek = [
         r"elsokep.png",
-        r"masodikkep.png",
         r"harmadikkep.png",
-        r"hetedik.png",
         r"nyolcadik.png"
     ]
     
