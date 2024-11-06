@@ -1,2 +1,2 @@
-Teszt; ÁRON
-Működik; BENCE
+Jó napot kívánok tanár úr!; ÁRON
+Szép tesztelést kívánunk tanár úr!; BENCE
